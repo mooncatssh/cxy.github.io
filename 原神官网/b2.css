@@ -1,0 +1,62 @@
+.b3{
+    position: relative;
+    margin-top: 900px;
+    margin-left: 650px;
+}
+.b3 h3{
+    font-size: 50px;
+}
+#ul_left li{
+    position:absolute;
+    margin-top: 50px;
+    list-style: none;
+}
+
+#ul_left img{
+    position: absolute;
+    width: auto;
+    height: 400px;
+    margin-top: 270px;
+    margin-left: 100px;
+    overflow: hidden;
+}
+#ul_left{
+    position: relative;
+}
+#pointer{
+    position:absolute;
+    margin-top: 640px;
+    margin-left: 370px;
+}
+.ac{
+    background-color: white;
+}
+#pointer li{
+    list-style: none;
+    text-align: center;
+	line-height: 25px;
+    padding: 0px;
+    float: left;
+    width: 20px;
+    height: 20px;       
+    border-radius: 50%;
+    background-color:rgba(226, 216, 216,0);
+    /*将背景颜色设置到内容区，边框和内边距不在有背景颜色*/
+    
+    border: 1px solid white;
+ }
+.content_2{
+    position: relative;
+    width: 1470px;
+    height: 1000px;
+    background-image: url("../29770c4.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px 800px;
+    margin-top: -900px;
+}
+h3{
+    position: absolute;
+    margin-top: 170px;
+    z-index: 999;
+    color: white;
+}

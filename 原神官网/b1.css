@@ -1,0 +1,98 @@
+.b2{
+    margin-left: 360px;
+}
+.bu2{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: 15px;;
+    bottom: 67px;
+    background-image: url("../下载\ \(10\).png");
+    background-position: 80px -1px;
+
+}
+button:hover{
+    background-color: rgba(0, 0, 0,0);
+
+}
+
+.bu2:hover {
+    background-position: 80px 80px;
+}
+
+
+.but1{
+    position: relative;
+    bottom: 13px;
+    right: 153px;
+}
+button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 470px;
+    margin-left: 700px;
+    border: 0px solid white;
+
+}
+.b2 li{
+    list-style: none;
+}
+.b222{
+    position: absolute;
+    margin-top: 560px;
+    margin-left: 340px;
+}
+.pc{
+    position: absolute;
+    margin-top: 560px;
+    margin-left:870px;
+
+}
+.pc a :hover{
+    background-color:darkgray;
+}
+.b2 a :hover{
+    background-color:darkgray;
+}
+.b2 a{
+    border:0px;
+    height: 57px;
+}
+.b22{
+    margin-top: 560px;
+    margin-left: 180px;
+    float: left;
+}
+.b33 img{
+    width: 110px;
+}
+.b33{
+    border: 1px;
+    position: absolute;/*取消行内元素独占一行*/
+    margin-top: 560px;
+    margin-left:450px;
+}
+.sb2 {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 600px;
+}
+.sb2 img{
+    width: 100px;
+}
+.a1{
+    position: fixed;
+    top:1px;
+    z-index: 9999;
+}
+.content_wrap{
+    position: relative;
+    width: 1470px;
+    height: 800px;
+    background-image: url("../47f71d4.jpg");
+    background-repeat:no-repeat;
+    background-size: 1500px 800px;
+    background-attachment:scroll;
+}

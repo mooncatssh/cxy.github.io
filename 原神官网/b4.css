@@ -1,0 +1,85 @@
+.city__list{
+    position: absolute;
+}
+.b5{
+    position:absolute;
+    width: 1473px;
+    height: 240px;
+    margin-top: 800px;
+}
+.city__list-bg1{
+    width: 1473px;
+    height: 240px;
+    background-image: url("../2020021114213984258.jpg");
+}
+.city__list-char1{
+    position: absolute;
+    margin-bottom: 00px;
+    width: 1473px;
+    height: 240px;
+    background-image: url("../2022012117380353873.png");
+    background-repeat: no-repeat;
+    background-position:800px;
+}
+.city__list-bg2{
+    width: 1473px;
+    height: 240px;
+    background-image: url("../2020051511071844630.jpg");
+}
+.city__list-char2{
+    position: absolute;
+    margin-bottom: 00px;
+    width: 1473px;
+    height: 240px;
+    background-image: url("../2021062410110987203.png");
+    background-repeat: no-repeat;
+    background-position:800px;
+}
+.city__list-bg3{
+    width: 1473px;
+    height: 240px;
+    background-image: url("../2021072011394586258.jpg");
+}
+.city__list-char3{
+    position: absolute;
+    margin-bottom: 00px;
+    width: 1473px;
+    height: 240px;
+    background-image: url("../2021071917013922761.png");
+    background-repeat: no-repeat;
+    background-position:800px;
+}
+.city__list-bg4{
+    width: 1473px;
+    height: 240px;
+    background-image: url("../b01e3edba8378a485bd2f8b2075e4e86_8655330006701981250.jpg");
+}
+.city__list-char4{
+    position: absolute;
+    margin-bottom: 00px;
+    width: 1473px;
+    height: 240px;
+    background-image: url("../9ec9dfd134fa8701b8d25ed856303ea1_4280333980101063155.png");
+    background-repeat: no-repeat;
+    background-position:800px;
+}
+.city__list-bg5{
+    width: 1473px;
+    height: 240px;
+    background-image: url("../9a62be8.jpg");
+}
+.city_list-item p{
+    margin-top: -140px;
+    position: absolute;
+    z-index: 3;
+    font-size: 36px;
+    color: #fff;;
+    width: 100%;
+    height: 132px;
+    line-height: 132px;
+    background: url("../下载\ \(12\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140px;
+    text-align:center;
+}
