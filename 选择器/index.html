@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .b1{
+            width: 100%;
+            height: 100px;
+            background-image: url("../2020021114213984258.jpg");
+        }
+        .b2 img{
+            width: auto;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="b1">
+        <div class="b2">
+            <img src="">
+        </div>
+    </div>
+    
+    <script>
+        let a =document.getElementsByClassName("b1");
+        let b =document.getElementsByClassName("b2");
+        let arry=["../2022012117380353873.png"]
+        a.onmouse =()=>{
+            changeimg();
+        }
+        let changeimg =() =>{
+            b.innerHTML='<img src="../'+arry[0]+`" />`
+        }
+    </script>
+</body>
+
+</html>

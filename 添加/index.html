@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原神用户</title>
+    <style>
+        .warapper{
+            width: 400px;
+            margin: 100px auto;
+            text-align: center;
+        }
+        table {
+                width: 400px;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            td,th{
+                border: 1px solid pink;
+                padding: 10px;
+            }
+            form div {
+                margin: 10px 0;
+            }
+    </style>
+</head>
+<body>
+    <div class="warapper">
+        <table>
+            <tbody>
+                <tr>
+                    <th>角色</th>
+                    <th>武器</th>
+                    <th>神之眼</th>
+                    <th>地区</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td>琴</td>
+                    <td>单手剑</td>
+                    <td>风</td>
+                    <td>蒙德</td>
+                    <td><a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td>安博</td>
+                    <td>弓</td>
+                    <td>火</td>
+                    <td>蒙德</td>
+                    <td><a href="#">删除</a></td>
+                </tr>
+                <tr>
+                    <td>刻晴</td>
+                    <td>单手剑</td>
+                    <td>雷</td>
+                    <td>璃月</td>
+                    <td><a href="#">删除</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <form action="#">
+            <div>
+                <label for="name">角色名字</label>
+                <input type="text" id="name" />
+            </div>
+            <div>
+                <label for="wuqi">武器</label>
+                <input type="text" id="wuqi" />
+            </div>
+            <div>
+                <label for="salary">神之眼</label>
+                <input type="text" id="salary" />
+            </div>
+            <div>
+                <label for="city">地区</label>
+                <input type="text" id="city" />
+            </div>
+            <button id="btn" type="button">添加</button>
+        </form>
+    </div>
+    <script>
+        function delet(){
+            const tr =this.parentNode.parentNode
+            if (confirm("确认要删除吗？")) {
+                        tr.remove()
+                    }
+                }
+        const links=document.links
+        for(let i=0;i<links.length;i++){
+            links[i].onclick=delet
+        }
+
+        const tbody =document.querySelector("tbody")
+        const btn =document.getElementById("btn")
+        btn.onclick =function(){
+
+        const name =document.getElementById("name").value
+        const wuqi =document.getElementById("wuqi").value
+        const salary=document.getElementById("salary").value
+        const city=document.getElementById("city").value
+
+        const tr =document.createElement("tr")
+
+        const nameTd =document.createElement("td")
+        const wuqiTd=document.createElement("td")
+        const salaryTd =document.createElement("td")
+        const cityTd =document.createElement("td")
+
+        nameTd.innerHTML= name
+        wuqiTd.textContent= wuqi
+        salaryTd.textContent= salary
+        cityTd.textContent=city
+
+        tr.appendChild(nameTd)
+        tr.appendChild(wuqiTd)
+        tr.appendChild(salaryTd)
+        tr.appendChild(cityTd)
+        tr.insertAdjacentHTML("beforeend", '<td><a href="javascript:;">删除</a></td>')
+
+        tbody.appendChild(tr)
+
+        links[links.length - 1].onclick = delet
+
+    }
+    </script>
+</body>
+</html>

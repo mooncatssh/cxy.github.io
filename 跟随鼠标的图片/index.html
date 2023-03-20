@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            position: absolute;
+            top:2px;
+        }
+    </style>
+</head>
+<body>
+    <img src="../favicon.ico" alt="">
+
+
+    <script>
+        var pink = document.querySelector('img');
+        document.addEventListener('mousemove',function(e){
+            var x =e.pageX;
+            var y =e.pageY;
+
+            console.log('他的x坐标为'+x,'他的y坐标为'+y);
+            pink.style.left= x -10 +'px';
+            pink.style.top= y -15 +'px';
+        });
+
+
+    </script>
+</body>
+</html>
