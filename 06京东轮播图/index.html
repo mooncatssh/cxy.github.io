@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东轮播图</title>
+    <link rel="stylesheet" href="../rest.css"> 
+    <style>
+        /*设置图片的容器*/
+        .img-list{
+            width: 500px;
+            height: 400px;
+            margin: 100px auto;
+            /*为ul设置相对定位，目的使ul中的porter可以相对于ul定位而不是初始包含块（html)*/
+            position: relative;
+        }
+        /*设置li*/
+        .img-list li{
+            position: absolute;
+        }
+        /*通过修改元素的层级来显示指定的图片*/
+         .img-list li:nth-child(2){
+            z-index: 1;
+         }
+
+         .porter{
+            position: absolute;
+            bottom: 20px;
+            z-index: 99999 ;
+            left: 40px;
+
+         }
+         /*设置导航点的大小*/
+         .porter a{
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-left: 4px;        
+            border-radius: 50%;
+            background-color:aqua;
+            /*将背景颜色设置到内容区，边框和内边距不在有背景颜色*/
+            background-clip: content-box;
+            border: 2px solid transparent;
+         }
+         .pointer a .active,
+         .porter a:hover{
+            background-color:white;
+            border: 2px solid red;
+
+         }
+    </style>
+</head>
+<body>
+    <ul class="img-list">
+        <li><a href="javascript:;"><img src="../1_~R__0K5CQ79_N3LY97NLW.png " alt=""></a> </li>
+        <li><a href="javascript:;"><img src="../4TPZHC4W5)NKD338ZX}D[EB.png" alt=""></a> </li>
+        <li><a href="javascript:;"><img src="../I[[EL_M0}]{8AG57U(L}051.png" alt=""></a> </li>
+        <div class="pointer">
+            <a class ="active" href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </ul>
+    
+</body>
+</html>
